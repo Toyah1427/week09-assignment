@@ -9,4 +9,4 @@ CREATE TABLE posts (
     id SERIAL PRIMARY KEY,
     profile_id INT REFERENCES profiles(id),
     content TEXT
-)
+);
