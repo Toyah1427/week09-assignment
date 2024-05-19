@@ -1,8 +1,8 @@
 import { ClerkProvider, SignInButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
 import './globals.css';
 import { auth } from "@clerk/nextjs/server";
-import { db } from "@/lib/db";
-import ProfileForm from "./";
+import { db } from "@/lib/db.js";
+import ProfileForm from "./ProfileForm.jsx";
 
 export default async function RootLayout({ children }) {
   const { userId } = auth();
